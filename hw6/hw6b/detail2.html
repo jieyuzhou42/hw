@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Multivitamins</title>
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Metal&family=Montserrat:wght@200&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="./cart.js"></script>
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/16909c4ecc.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <header>
+        <h1 class="toolbar" >Green Life</h1>
+        <h3 class="toolbar"><a href="list.html" style="color: black;" >Our Products</a></h3>
+        <h3 class="toolbar"><a href="list.html" style="color: black;" >About Us</a></h3>
+        <h3 class="toolbar"><a href="list.html" style="color: black;" >For Customers</a></h3>
+        <i class="fa-solid fa-user fa-2xl" style="position: absolute;top:40px;right:50px"></i>
+        <i class="fa-solid fa-cart-shopping fa-2xl" style="position: absolute;top:40px;right:120px" onclick="document.getElementById('myModal').style.display='block' "></i>
+    </header>
+
+<section class="container content-section">
+
+    <div class="shop-items">
+    <div class="shop-item">
+        <!-- product img -->
+        <div width="500px" height="600px">
+            <img class="shop-item-image"src="1.png"  style="height: 600px; padding:10px;position:absolute;left:200px;top: 150px;"/>
+        </div>
+        <!--detail-->
+        <div class="rec1">
+            <h1 class="shop-item-title title">Multivitamins</h1>
+            <p class="detail">Contains Multipple nutrition, 30% more protein, Nutritionally complete, Vegan and gluten-free.</p>
+            <div class="flavor" style="position:absolute;left:20px;top:230px;">Delivery Frequency</div>
+            <div class="option">    
+                <img src="arrow.png" class="arrow" height="20"/>
+                <select name="time">
+                    <option value="1 week" selected>1 week</option>
+                    <option value="2 weeks" >2 weeks</option>
+                    <option value="1 month">1 month</option>
+                </select>
+            </div>
+            <div class="selection">
+            <div class="flavors">
+                <div class="flavor">Banana</div>
+                <div class="flavor">+</div>
+            </div>
+            <div class="lineTop"></div>
+            <div class="flavors">
+                <div class="flavor">Chocolate</div>
+                <div class="flavor">+</div>
+            </div>
+            <div class="lineTop"></div>
+            <div class="flavors">
+                <div class="flavor">Coffee</div>
+                <div class="flavor">+</div>
+            </div>
+            <div class="lineTop"></div>
+            <div class="flavors">
+                <div class="flavor">Strawberry</div>
+                <div class="flavor">+</div>
+            </div>
+            <div class="lineTop"></div>
+            </div>        
+            <div class="check">
+                <div style="display: flex;justify-content: space-between;width: 100px;">
+                <div><p class="price">$3</p></div>
+            </div>
+            <button id='roundedrec2'class="shop-item-button" onclick="document.getElementById('myModal').style.display='block' ">ADD TO CART</button>        
+        </div>
+    </div>
+    </div>
+</div>
+</section>
+<!-- modal to popup the cart -->
+<div id="myModal" class="modal" >
+    <span onclick="document.getElementById('myModal').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <section class="container content-section modal-content">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button id='roundedrec4' class="btn btn-primary btn-purchase" type="button">Purchase</button>
+    </section>
+</div>
+</body>
+</html>
