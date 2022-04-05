@@ -1,0 +1,465 @@
+.filter{
+    width: 260px;
+    position: absolute;
+    left: 60px;
+    top: 150px;
+}
+
+.filtertitle{
+    font-weight:400;
+    font-size: 20px;
+    line-height: 10px;
+    color: #D1A085;
+    text-align: center;
+    font-family: 'Open Sans';
+}
+
+.filtertitle2{
+    font-weight:400;
+    font-size: 20px;
+    line-height: 10px;
+    color: #D1A085;
+    
+    font-family: 'Open Sans';
+}
+
+.filterca{
+    font-family: 'Open Sans';
+    font-size: 18px;
+    line-height: 28px;
+    font-weight:400;
+}
+.blank{
+    padding:30px;
+}
+.productfound{
+    width: 1000px;
+    position: absolute;
+    right:60px;
+    top: 150px;
+    text-align: left;
+}
+
+.product{
+    width: 1000px;
+    position: absolute;
+    right:60px;
+    top: 220px;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.item{
+    background: rgba(234, 234, 234, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    width: 300px;
+    height: 600px;
+    margin: 10px;
+}
+
+#itemtitle{
+    line-height: 10px;
+    font-weight:400;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    color: #414141;
+}
+
+#itemprice{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: 'Open Sans';
+    color: #6A6A6A;
+}
+
+.itemlist{
+    font-family: 'Open Sans';
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.image-box{
+    position: absolute;
+    left:350px;
+    top: 200px;
+    z-index: 1;
+    border: 10px solid #466995;
+    text-align: center;
+    width: 300px;
+    height:300px
+}
+
+#roundedrec2{
+    color:white;
+    font-weight: bold;
+    letter-spacing:1px;
+    background-color: #997560;
+    padding-top: 8px;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+  }
+
+#roundedrec4{
+    color:white;
+    letter-spacing:3px;
+    background-color: #997560;
+    text-align: center;
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+  }
+
+
+.counter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rec1{
+    position: absolute;
+    width: 544px;
+    height: 650px;
+    right: 50px;
+    top: 160px;
+    z-index: 10;
+
+    background: rgba(234, 234, 234, 0.1);
+    border: 5px solid #8A5A3B;
+    box-sizing: border-box;
+}
+
+.title{
+    position: absolute;
+    width: 409px;
+    height: 62px;
+    left: 20px;
+    top: 20px;
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 56px;
+   
+    color: #000000;
+}
+
+.detail{
+    position: absolute;
+    width: 466px;
+    height: 108px;
+    left: 20px;
+    top: 100px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.selection{
+    position: absolute;
+    left: 20px;
+    top: 340px;
+}
+
+.option{
+    z-index: 10;
+    position: absolute;
+    left: 20px;
+    top: 270px;
+    border-radius: 6px;
+    width: 200px;
+    height: 40px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.arrow{
+    z-index: 3;
+    position: absolute;
+    left: 170px;
+    top: 10px;
+}
+.option select{
+    border: none;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-left: 20px;
+}   
+
+.option:after{
+    content: "";
+    height: 100px;
+    background: url(arrow.png) no-repeat center;
+    position: absolute;
+    right: 20px;
+    top: 41%;
+    pointer-events: none;
+  }
+
+
+.flavors{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.flavor{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.price{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.check{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    right: 50px;
+    top: 450px;
+}
+
+.lineTop{
+    width: 200px;
+    border-top: 1px solid #8A5A3B;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: inline-block ;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+    top: 1000px;
+}
+
+.cart-item {
+    width: 50%;
+}
+
+.cart-price {
+    width: 15%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #614A4A;
+    border: none;
+    border-radius: .3em;
+}
+
+.btn-danger:hover {
+    background-color: #8A5A3B;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #8A5A3B;
+    background-color: #F6F6F6;
+    color: #8A5A3B;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto;
+}
+
+/*the framework of modal is from W3SCHOLLL
+Get the modal*/
+#myModal{
+    z-index: 20;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 20; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #fefefe;
+    /* margin: 15% auto; 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+    height: 100%;
+  }
+
+  .close {
+    z-index: 1;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    font-size: 50px;
+    font-weight: bold;
+    color:#997560;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color:#f44336;
+    cursor: pointer;
+  }
+
+
+  .roundedrec3{
+    letter-spacing:1px;
+    background-color: #997560;
+    padding-top: 12px;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+  }
+
+.btn {
+    width: 20px;
+    height: 20px;
+    color: white;
+    background-color: #997560;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.total-items-in-cart{
+    width: 20px;
+    height: 20px;
+    color: white;
+    position:absolute;
+    top:20px;
+    right:110px;
+    background-color: #997560;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.container{
+    flex-direction: row;
+    display: flex;
+    font-family: 'Open Sans';
+    align-items:center;
+    row-gap: 10px;
+}
+
+.btn-remove{
+    width: 20px;
+    height: 20px;
+    color: white;
+    background-color: #D1A085;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.subtotal{
+    font-family: 'Open Sans';
+    text-align: end;
+    margin-top: 30px;
+    margin-right: 20px;
+    font-size: 1.2em;
+    border-top: 1px solid black;
+}
